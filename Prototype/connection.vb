@@ -11,6 +11,7 @@ Module Connection
                     If .State = ConnectionState.Open Then .Close()
                     .ConnectionString = ("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\PrototypeDB1.accdb")
                     .Open()
+                    'YO
                 End With
             Catch ex As Exception
                 MessageBox.Show("Unable to connect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
